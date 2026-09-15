@@ -1,0 +1,8 @@
+{
+  "reference": "/workspace/scratch/a200d301e1c5/Address_matching_GPB-main/data/reference_demo.csv",
+  "queries": "data/generated_queries.csv",
+  "output": "reports/synthetic",
+  "threshold": 0.84,
+  "margin": 0.06,
+  "split": null
+}
