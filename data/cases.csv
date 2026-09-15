@@ -1,0 +1,26 @@
+query,true_id,category
+"Красноярск, ул. Ленина 25",kr25,incomplete
+"д. 25, ул. Ленина, г. Красноярск",kr25,permutation
+"г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces
+"Красноярскийкрай,г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces
+"г. Горький, ул. Ленина, д. 10",nn10,historic
+"г. Нижний Новгород, ул. Горького, д. 10",nn_gorky,historic_context
+"Красноярск-45, ул. Ленина 25",closed25,close_toponyms
+"Курская обл., г. Железногорск, ул. Ленина 25",zhel_kursk,same_city
+"Красноярский край, Железногорск, ул. Ленина 25",zhel_kr,same_city
+"Железногорск, ул. Ленина 25",,ambiguous_region
+"Москва, ул. Ленина 10",,ambiguous_building
+"Москва, ул. Ленина 10к2",msk_b2,building
+"Москва, ул. Ленина 10 стр. 2",msk_s2,structure
+"Москва, ул. Ленина 10А",msk_letter,house_letter
+"Москва, ул. Ленина 10/2",msk_slash,house_slash
+"Невский пр-т, 5, Санкт-Петербург",spb5,abbreviations
+"Москва, ул. Тверс. 7",msk_tver,street_abbreviation
+"Москва, Лен. пр-т 7",,ambiguous_abbreviation
+"Москва, ул. 8 Марта 12",msk_march,numeric_street
+"Москва, ул. Ленина 999",,unknown_house
+"г. Красноярск-46, ул. Ленина 25",,unknown_city_suffix
+"Томск, ул. Ленина 25",,unknown_city
+"Курская область, г. Красноярск, ул. Ленина 25",,conflicting_region
+"г. Москва, ул. Ленина, д. 2, корп. 10",,invalid_permutation
+"",,empty

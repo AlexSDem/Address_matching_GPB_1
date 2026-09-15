@@ -1,0 +1,121 @@
+source_id,query,true_id,category,split
+kr25,"красноярский край, г. красноярск, центральный район, улица ленина, д. 25",kr25,clean,test
+kr25,"улица ленина, г. красноярск, центральный район, д. 25, красноярский край",kr25,component_permutation,test
+kr25,"красноярскийкрай,г.красноярск,центральныйрайон,улицаленина,д.25",kr25,missing_spaces,test
+kr25,"красноярский край, г. красноярск, центральный район, ул. ленина, д. 25",kr25,abbreviations,test
+kr25,"красноярский край, г. красноярск, центральный район, улица лени., д. 25",kr25,street_abbreviation,test
+kr25,"г. красноярск, улица ленина, д. 25",kr25,incomplete,test
+kr25,"красноярский край, г. красноярск, центральный район, улица лнеина, д. 25",kr25,typo,test
+kr26,"красноярский край, г. красноярск, улица ленина, д. 26",kr26,clean,validation
+kr26,"улица ленина, д. 26, г. красноярск, красноярский край",kr26,component_permutation,validation
+kr26,"красноярскийкрай,г.красноярск,улицаленина,д.26",kr26,missing_spaces,validation
+kr26,"красноярский край, г. красноярск, ул. ленина, д. 26",kr26,abbreviations,validation
+kr26,"красноярский край, г. красноярск, улица лени., д. 26",kr26,street_abbreviation,validation
+kr26,"г. красноярск, улица ленина, д. 26",kr26,incomplete,validation
+kr26,"красноярский край, г. красноярск, улица лнеина, д. 26",kr26,typo,validation
+closed25,"красноярский край, г. красноярск-45, улица ленина, д. 25",closed25,clean,train
+closed25,"г. красноярск-45, красноярский край, улица ленина, д. 25",closed25,component_permutation,train
+closed25,"красноярскийкрай,г.красноярск-45,улицаленина,д.25",closed25,missing_spaces,train
+closed25,"красноярский край, г. красноярск-45, ул. ленина, д. 25",closed25,abbreviations,train
+closed25,"красноярский край, г. красноярск-45, улица лени., д. 25",closed25,street_abbreviation,train
+closed25,"г. красноярск-45, улица ленина, д. 25",closed25,incomplete,train
+closed25,"красноярский край, г. красноярск-45, улица лнеина, д. 25",closed25,typo,train
+zhel_kursk,"курская область, г. железногорск, улица ленина, д. 25",zhel_kursk,clean,train
+zhel_kursk,"курская область, д. 25, г. железногорск, улица ленина",zhel_kursk,component_permutation,train
+zhel_kursk,"курскаяобласть,г.железногорск,улицаленина,д.25",zhel_kursk,missing_spaces,train
+zhel_kursk,"курская обл., г. железногорск, ул. ленина, д. 25",zhel_kursk,abbreviations,train
+zhel_kursk,"курская область, г. железногорск, улица лени., д. 25",zhel_kursk,street_abbreviation,train
+zhel_kursk,"г. железногорск, улица ленина, д. 25",,incomplete,train
+zhel_kursk,"курская область, г. железногорск, улица лнеина, д. 25",zhel_kursk,typo,train
+zhel_kr,"красноярский край, г. железногорск, улица ленина, д. 25",zhel_kr,clean,train
+zhel_kr,"улица ленина, д. 25, г. железногорск, красноярский край",zhel_kr,component_permutation,train
+zhel_kr,"красноярскийкрай,г.железногорск,улицаленина,д.25",zhel_kr,missing_spaces,train
+zhel_kr,"красноярский край, г. железногорск, ул. ленина, д. 25",zhel_kr,abbreviations,train
+zhel_kr,"красноярский край, г. железногорск, улица лени., д. 25",zhel_kr,street_abbreviation,train
+zhel_kr,"г. железногорск, улица ленина, д. 25",,incomplete,train
+zhel_kr,"красноярский край, г. железногорск, улица лнеина, д. 25",zhel_kr,typo,train
+nn10,"нижегородская область, г. нижний новгород, улица ленина, д. 10",nn10,clean,train
+nn10,"д. 10, г. нижний новгород, нижегородская область, улица ленина",nn10,component_permutation,train
+nn10,"нижегородскаяобласть,г.нижнийновгород,улицаленина,д.10",nn10,missing_spaces,train
+nn10,"нижегородская обл., г. нижний новгород, ул. ленина, д. 10",nn10,abbreviations,train
+nn10,"нижегородская область, г. нижний новгород, улица лени., д. 10",nn10,street_abbreviation,train
+nn10,"г. нижний новгород, улица ленина, д. 10",nn10,incomplete,train
+nn10,"нижегородская область, г. нижний новгород, улица лнеина, д. 10",nn10,typo,train
+nn_gorky,"нижегородская область, г. нижний новгород, улица горького, д. 10",nn_gorky,clean,test
+nn_gorky,"д. 10, г. нижний новгород, нижегородская область, улица горького",nn_gorky,component_permutation,test
+nn_gorky,"нижегородскаяобласть,г.нижнийновгород,улицагорького,д.10",nn_gorky,missing_spaces,test
+nn_gorky,"нижегородская обл., г. нижний новгород, ул. горького, д. 10",nn_gorky,abbreviations,test
+nn_gorky,"нижегородская область, г. нижний новгород, улица горь., д. 10",nn_gorky,street_abbreviation,test
+nn_gorky,"г. нижний новгород, улица горького, д. 10",nn_gorky,incomplete,test
+nn_gorky,"нижегородская область, г. нижний новгород, улица гроького, д. 10",nn_gorky,typo,test
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,clean,test
+spb5,"д. 5, проспект невский, г. санкт-петербург",spb5,component_permutation,test
+spb5,"г.санкт-петербург,проспектневский,д.5",spb5,missing_spaces,test
+spb5,"г. санкт-петербург, пр-т невский, д. 5",spb5,abbreviations,test
+spb5,"г. санкт-петербург, проспект невс., д. 5",spb5,street_abbreviation,test
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,incomplete,test
+spb5,"г. санкт-петербург, проспект нвеский, д. 5",spb5,typo,test
+msk_b1,"г. москва, улица ленина, д. 10 корп. 1",msk_b1,clean,train
+msk_b1,"г. москва, д. 10 корп. 1, улица ленина",msk_b1,component_permutation,train
+msk_b1,"г.москва,улицаленина,д.10корп.1",msk_b1,missing_spaces,train
+msk_b1,"г. москва, ул. ленина, д. 10 корп. 1",msk_b1,abbreviations,train
+msk_b1,"г. москва, улица лени., д. 10 корп. 1",msk_b1,street_abbreviation,train
+msk_b1,"г. москва, улица ленина, д. 10 корп. 1",msk_b1,incomplete,train
+msk_b1,"г. москва, улица лнеина, д. 10 корп. 1",msk_b1,typo,train
+msk_b1,"г. москва, улица ленина, д. 1 корп. 10",,invalid_permutation,train
+msk_b2,"г. москва, улица ленина, д. 10 корп. 2",msk_b2,clean,validation
+msk_b2,"улица ленина, д. 10 корп. 2, г. москва",msk_b2,component_permutation,validation
+msk_b2,"г.москва,улицаленина,д.10корп.2",msk_b2,missing_spaces,validation
+msk_b2,"г. москва, ул. ленина, д. 10 корп. 2",msk_b2,abbreviations,validation
+msk_b2,"г. москва, улица лени., д. 10 корп. 2",msk_b2,street_abbreviation,validation
+msk_b2,"г. москва, улица ленина, д. 10 корп. 2",msk_b2,incomplete,validation
+msk_b2,"г. москва, улица лнеина, д. 10 корп. 2",msk_b2,typo,validation
+msk_b2,"г. москва, улица ленина, д. 2 корп. 10",,invalid_permutation,validation
+msk_s2,"г. москва, улица ленина, д. 10 стр. 2",msk_s2,clean,train
+msk_s2,"д. 10 стр. 2, г. москва, улица ленина",msk_s2,component_permutation,train
+msk_s2,"г.москва,улицаленина,д.10стр.2",msk_s2,missing_spaces,train
+msk_s2,"г. москва, ул. ленина, д. 10 стр. 2",msk_s2,abbreviations,train
+msk_s2,"г. москва, улица лени., д. 10 стр. 2",msk_s2,street_abbreviation,train
+msk_s2,"г. москва, улица ленина, д. 10 стр. 2",msk_s2,incomplete,train
+msk_s2,"г. москва, улица лнеина, д. 10 стр. 2",msk_s2,typo,train
+msk_letter,"г. москва, улица ленина, д. 10а",msk_letter,clean,train
+msk_letter,"улица ленина, г. москва, д. 10а",msk_letter,component_permutation,train
+msk_letter,"г.москва,улицаленина,д.10а",msk_letter,missing_spaces,train
+msk_letter,"г. москва, ул. ленина, д. 10а",msk_letter,abbreviations,train
+msk_letter,"г. москва, улица лени., д. 10а",msk_letter,street_abbreviation,train
+msk_letter,"г. москва, улица ленина, д. 10а",msk_letter,incomplete,train
+msk_letter,"г. москва, улица лнеина, д. 10а",msk_letter,typo,train
+msk_slash,"г. москва, улица ленина, д. 10/2",msk_slash,clean,train
+msk_slash,"д. 10/2, улица ленина, г. москва",msk_slash,component_permutation,train
+msk_slash,"г.москва,улицаленина,д.10/2",msk_slash,missing_spaces,train
+msk_slash,"г. москва, ул. ленина, д. 10/2",msk_slash,abbreviations,train
+msk_slash,"г. москва, улица лени., д. 10/2",msk_slash,street_abbreviation,train
+msk_slash,"г. москва, улица ленина, д. 10/2",msk_slash,incomplete,train
+msk_slash,"г. москва, улица лнеина, д. 10/2",msk_slash,typo,train
+msk_tver,"г. москва, улица тверская, д. 7",msk_tver,clean,train
+msk_tver,"улица тверская, д. 7, г. москва",msk_tver,component_permutation,train
+msk_tver,"г.москва,улицатверская,д.7",msk_tver,missing_spaces,train
+msk_tver,"г. москва, ул. тверская, д. 7",msk_tver,abbreviations,train
+msk_tver,"г. москва, улица твер., д. 7",msk_tver,street_abbreviation,train
+msk_tver,"г. москва, улица тверская, д. 7",msk_tver,incomplete,train
+msk_tver,"г. москва, улица теврская, д. 7",msk_tver,typo,train
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,clean,test
+msk_march,"улица 8 марта, г. москва, д. 12",msk_march,component_permutation,test
+msk_march,"г.москва,улица8марта,д.12",msk_march,missing_spaces,test
+msk_march,"г. москва, ул. 8 марта, д. 12",msk_march,abbreviations,test
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,incomplete,test
+msk_march,"г. москва, улица 8 амрта, д. 12",msk_march,typo,test
+msk_lenpr,"г. москва, проспект ленинградский, д. 7",msk_lenpr,clean,train
+msk_lenpr,"д. 7, проспект ленинградский, г. москва",msk_lenpr,component_permutation,train
+msk_lenpr,"г.москва,проспектленинградский,д.7",msk_lenpr,missing_spaces,train
+msk_lenpr,"г. москва, пр-т ленинградский, д. 7",msk_lenpr,abbreviations,train
+msk_lenpr,"г. москва, проспект лени., д. 7",,street_abbreviation,train
+msk_lenpr,"г. москва, проспект ленинградский, д. 7",msk_lenpr,incomplete,train
+msk_lenpr,"г. москва, проспект лнеинградский, д. 7",msk_lenpr,typo,train
+msk_leninpr,"г. москва, проспект ленинский, д. 7",msk_leninpr,clean,validation
+msk_leninpr,"проспект ленинский, г. москва, д. 7",msk_leninpr,component_permutation,validation
+msk_leninpr,"г.москва,проспектленинский,д.7",msk_leninpr,missing_spaces,validation
+msk_leninpr,"г. москва, пр-т ленинский, д. 7",msk_leninpr,abbreviations,validation
+msk_leninpr,"г. москва, проспект лени., д. 7",,street_abbreviation,validation
+msk_leninpr,"г. москва, проспект ленинский, д. 7",msk_leninpr,incomplete,validation
+msk_leninpr,"г. москва, проспект лнеинский, д. 7",msk_leninpr,typo,validation
