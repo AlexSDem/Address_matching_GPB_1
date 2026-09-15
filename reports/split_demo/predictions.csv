@@ -1,0 +1,55 @@
+source_id,query,true_id,category,split,model,candidate_id,accepted,score,status
+kr25,"красноярский край, г. красноярск, центральный район, улица ленина, д. 25",kr25,clean,test,baseline,kr25,True,1.0,threshold
+kr25,"красноярский край, г. красноярск, центральный район, улица ленина, д. 25",kr25,clean,test,hybrid,kr25,True,0.9975905875317431,accepted
+kr25,"улица ленина, г. красноярск, центральный район, д. 25, красноярский край",kr25,component_permutation,test,baseline,kr25,True,1.0,threshold
+kr25,"улица ленина, г. красноярск, центральный район, д. 25, красноярский край",kr25,component_permutation,test,hybrid,kr25,True,0.9930880574594403,accepted
+kr25,"красноярскийкрай,г.красноярск,центральныйрайон,улицаленина,д.25",kr25,missing_spaces,test,baseline,kr25,True,0.9013377712246812,threshold
+kr25,"красноярскийкрай,г.красноярск,центральныйрайон,улицаленина,д.25",kr25,missing_spaces,test,hybrid,kr25,True,0.9843122621616794,accepted
+kr25,"красноярский край, г. красноярск, центральный район, ул. ленина, д. 25",kr25,abbreviations,test,baseline,kr25,True,1.0,threshold
+kr25,"красноярский край, г. красноярск, центральный район, ул. ленина, д. 25",kr25,abbreviations,test,hybrid,kr25,True,0.9975905875317431,accepted
+kr25,"красноярский край, г. красноярск, центральный район, улица лени., д. 25",kr25,street_abbreviation,test,baseline,kr25,True,0.9909363686856022,threshold
+kr25,"красноярский край, г. красноярск, центральный район, улица лени., д. 25",kr25,street_abbreviation,test,hybrid,kr25,True,0.9971208464441358,accepted
+kr25,"г. красноярск, улица ленина, д. 25",kr25,incomplete,test,baseline,closed25,False,0.8282879127632058,threshold
+kr25,"г. красноярск, улица ленина, д. 25",kr25,incomplete,test,hybrid,kr25,True,0.9493355775333661,accepted
+kr25,"красноярский край, г. красноярск, центральный район, улица лнеина, д. 25",kr25,typo,test,baseline,kr25,True,0.9883909389358122,threshold
+kr25,"красноярский край, г. красноярск, центральный район, улица лнеина, д. 25",kr25,typo,test,hybrid,kr25,True,0.9606543586080656,accepted
+nn_gorky,"нижегородская область, г. нижний новгород, улица горького, д. 10",nn_gorky,clean,test,baseline,nn_gorky,True,1.0,threshold
+nn_gorky,"нижегородская область, г. нижний новгород, улица горького, д. 10",nn_gorky,clean,test,hybrid,nn_gorky,True,0.9958648730935891,accepted
+nn_gorky,"д. 10, г. нижний новгород, нижегородская область, улица горького",nn_gorky,component_permutation,test,baseline,nn_gorky,True,1.0,threshold
+nn_gorky,"д. 10, г. нижний новгород, нижегородская область, улица горького",nn_gorky,component_permutation,test,hybrid,nn_gorky,True,0.9906208889201658,accepted
+nn_gorky,"нижегородскаяобласть,г.нижнийновгород,улицагорького,д.10",nn_gorky,missing_spaces,test,baseline,nn_gorky,True,0.8722533208118399,threshold
+nn_gorky,"нижегородскаяобласть,г.нижнийновгород,улицагорького,д.10",nn_gorky,missing_spaces,test,hybrid,nn_gorky,True,0.9784758429262608,accepted
+nn_gorky,"нижегородская обл., г. нижний новгород, ул. горького, д. 10",nn_gorky,abbreviations,test,baseline,nn_gorky,True,0.9589021855055886,threshold
+nn_gorky,"нижегородская обл., г. нижний новгород, ул. горького, д. 10",nn_gorky,abbreviations,test,hybrid,nn_gorky,True,0.9932693074103035,accepted
+nn_gorky,"нижегородская область, г. нижний новгород, улица горь., д. 10",nn_gorky,street_abbreviation,test,baseline,nn_gorky,True,0.9430149547971045,threshold
+nn_gorky,"нижегородская область, г. нижний новгород, улица горь., д. 10",nn_gorky,street_abbreviation,test,hybrid,nn_gorky,True,0.9887460350713135,accepted
+nn_gorky,"г. нижний новгород, улица горького, д. 10",nn_gorky,incomplete,test,baseline,nn_gorky,False,0.8101026934091116,threshold
+nn_gorky,"г. нижний новгород, улица горького, д. 10",nn_gorky,incomplete,test,hybrid,nn_gorky,True,0.9686280736498486,accepted
+nn_gorky,"нижегородская область, г. нижний новгород, улица гроького, д. 10",nn_gorky,typo,test,baseline,nn_gorky,True,0.9694580482870117,threshold
+nn_gorky,"нижегородская область, г. нижний новгород, улица гроького, д. 10",nn_gorky,typo,test,hybrid,nn_gorky,True,0.9660123250126927,accepted
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,clean,test,baseline,spb5,True,1.0,threshold
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,clean,test,hybrid,spb5,True,0.9884551380241193,accepted
+spb5,"д. 5, проспект невский, г. санкт-петербург",spb5,component_permutation,test,baseline,spb5,True,1.0,threshold
+spb5,"д. 5, проспект невский, г. санкт-петербург",spb5,component_permutation,test,hybrid,spb5,True,0.9849117526841088,accepted
+spb5,"г.санкт-петербург,проспектневский,д.5",spb5,missing_spaces,test,baseline,spb5,True,0.9138104975426086,threshold
+spb5,"г.санкт-петербург,проспектневский,д.5",spb5,missing_spaces,test,hybrid,spb5,True,0.9860136789979536,accepted
+spb5,"г. санкт-петербург, пр-т невский, д. 5",spb5,abbreviations,test,baseline,spb5,True,0.9852783576783677,threshold
+spb5,"г. санкт-петербург, пр-т невский, д. 5",spb5,abbreviations,test,hybrid,spb5,True,0.9884551380241193,accepted
+spb5,"г. санкт-петербург, проспект невс., д. 5",spb5,street_abbreviation,test,baseline,spb5,True,0.9616613940816725,threshold
+spb5,"г. санкт-петербург, проспект невс., д. 5",spb5,street_abbreviation,test,hybrid,spb5,True,0.9828294555445045,accepted
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,incomplete,test,baseline,spb5,True,1.0,threshold
+spb5,"г. санкт-петербург, проспект невский, д. 5",spb5,incomplete,test,hybrid,spb5,True,0.9884551380241193,accepted
+spb5,"г. санкт-петербург, проспект нвеский, д. 5",spb5,typo,test,baseline,spb5,True,0.9431002182947601,threshold
+spb5,"г. санкт-петербург, проспект нвеский, д. 5",spb5,typo,test,hybrid,spb5,True,0.9372635144976236,accepted
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,clean,test,baseline,msk_march,True,0.9999999999999998,threshold
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,clean,test,hybrid,msk_march,True,0.9972024504322394,accepted
+msk_march,"улица 8 марта, г. москва, д. 12",msk_march,component_permutation,test,baseline,msk_march,True,0.9999999999999998,threshold
+msk_march,"улица 8 марта, г. москва, д. 12",msk_march,component_permutation,test,hybrid,msk_march,True,0.9924439198390781,accepted
+msk_march,"г.москва,улица8марта,д.12",msk_march,missing_spaces,test,baseline,msk_march,True,0.8549810548135234,threshold
+msk_march,"г.москва,улица8марта,д.12",msk_march,missing_spaces,test,hybrid,msk_march,True,0.9663208358795552,accepted
+msk_march,"г. москва, ул. 8 марта, д. 12",msk_march,abbreviations,test,baseline,msk_march,True,0.9999999999999998,threshold
+msk_march,"г. москва, ул. 8 марта, д. 12",msk_march,abbreviations,test,hybrid,msk_march,True,0.9972024504322394,accepted
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,incomplete,test,baseline,msk_march,True,0.9999999999999998,threshold
+msk_march,"г. москва, улица 8 марта, д. 12",msk_march,incomplete,test,hybrid,msk_march,True,0.9972024504322394,accepted
+msk_march,"г. москва, улица 8 амрта, д. 12",msk_march,typo,test,baseline,msk_march,False,0.840706139115386,threshold
+msk_march,"г. москва, улица 8 амрта, д. 12",msk_march,typo,test,hybrid,msk_march,True,0.9284880820651794,accepted
