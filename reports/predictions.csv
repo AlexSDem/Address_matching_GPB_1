@@ -1,0 +1,51 @@
+query,true_id,category,model,candidate_id,accepted,score,status
+"Красноярск, ул. Ленина 25",kr25,incomplete,baseline,closed25,False,0.7642799150828488,threshold
+"Красноярск, ул. Ленина 25",kr25,incomplete,hybrid,kr25,True,0.9421713762521677,accepted
+"д. 25, ул. Ленина, г. Красноярск",kr25,permutation,baseline,closed25,False,0.8282879127632058,threshold
+"д. 25, ул. Ленина, г. Красноярск",kr25,permutation,hybrid,kr25,True,0.9446850424673519,accepted
+"г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces,baseline,closed25,False,0.8282879127632058,threshold
+"г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces,hybrid,kr25,True,0.9475848249048374,accepted
+"Красноярскийкрай,г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces,baseline,closed25,True,0.9303349330187077,threshold
+"Красноярскийкрай,г.Красноярск,ул.Ленина,д.25",kr25,missing_spaces,hybrid,kr25,True,0.9598350866419817,accepted
+"г. Горький, ул. Ленина, д. 10",nn10,historic,baseline,msk_slash,False,0.6598502509191366,threshold
+"г. Горький, ул. Ленина, д. 10",nn10,historic,hybrid,nn10,True,0.9015545872797358,accepted
+"г. Нижний Новгород, ул. Горького, д. 10",nn_gorky,historic_context,baseline,nn_gorky,False,0.8101026934091116,threshold
+"г. Нижний Новгород, ул. Горького, д. 10",nn_gorky,historic_context,hybrid,nn_gorky,True,0.9686280736498486,accepted
+"Красноярск-45, ул. Ленина 25",closed25,close_toponyms,baseline,closed25,False,0.7929693732633734,threshold
+"Красноярск-45, ул. Ленина 25",closed25,close_toponyms,hybrid,closed25,True,0.966007874203243,accepted
+"Курская обл., г. Железногорск, ул. Ленина 25",zhel_kursk,same_city,baseline,zhel_kursk,True,0.9178410652295168,threshold
+"Курская обл., г. Железногорск, ул. Ленина 25",zhel_kursk,same_city,hybrid,zhel_kursk,True,0.9882373989503012,accepted
+"Красноярский край, Железногорск, ул. Ленина 25",zhel_kr,same_city,baseline,zhel_kr,True,0.9492768357079032,threshold
+"Красноярский край, Железногорск, ул. Ленина 25",zhel_kr,same_city,hybrid,zhel_kr,True,0.9856872507279674,accepted
+"Железногорск, ул. Ленина 25",,ambiguous_region,baseline,zhel_kursk,False,0.7090717397048717,threshold
+"Железногорск, ул. Ленина 25",,ambiguous_region,hybrid,zhel_kr,False,0.9462414068203125,review
+"Москва, ул. Ленина 10",,ambiguous_building,baseline,msk_slash,False,0.836585669500375,threshold
+"Москва, ул. Ленина 10",,ambiguous_building,hybrid,msk_b1,False,0.9248989579239357,review
+"Москва, ул. Ленина 10к2",msk_b2,building,baseline,msk_slash,False,0.8259964206320314,threshold
+"Москва, ул. Ленина 10к2",msk_b2,building,hybrid,msk_b2,True,0.9697057261423689,accepted
+"Москва, ул. Ленина 10 стр. 2",msk_s2,structure,baseline,msk_s2,True,0.927554438851194,threshold
+"Москва, ул. Ленина 10 стр. 2",msk_s2,structure,hybrid,msk_s2,True,0.9745327292204333,accepted
+"Москва, ул. Ленина 10А",msk_letter,house_letter,baseline,msk_letter,True,0.8897217204702361,threshold
+"Москва, ул. Ленина 10А",msk_letter,house_letter,hybrid,msk_letter,True,0.9657697078899437,accepted
+"Москва, ул. Ленина 10/2",msk_slash,house_slash,baseline,msk_slash,True,0.8836760615021076,threshold
+"Москва, ул. Ленина 10/2",msk_slash,house_slash,hybrid,msk_slash,True,0.970798496726302,accepted
+"Невский пр-т, 5, Санкт-Петербург",spb5,abbreviations,baseline,spb5,True,0.9250016993258974,threshold
+"Невский пр-т, 5, Санкт-Петербург",spb5,abbreviations,hybrid,spb5,True,0.9783875321280259,accepted
+"Москва, ул. Тверс. 7",msk_tver,street_abbreviation,baseline,msk_tver,False,0.7918476856385432,threshold
+"Москва, ул. Тверс. 7",msk_tver,street_abbreviation,hybrid,msk_tver,True,0.958133987109796,accepted
+"Москва, Лен. пр-т 7",,ambiguous_abbreviation,baseline,msk_leninpr,False,0.7370898060438814,threshold
+"Москва, Лен. пр-т 7",,ambiguous_abbreviation,hybrid,msk_leninpr,False,0.8178521977680866,no_match
+"Москва, ул. 8 Марта 12",msk_march,numeric_street,baseline,msk_march,True,0.9052425738649212,threshold
+"Москва, ул. 8 Марта 12",msk_march,numeric_street,hybrid,msk_march,True,0.9767968414669183,accepted
+"Москва, ул. Ленина 999",,unknown_house,baseline,msk_slash,False,0.7556332876310334,threshold
+"Москва, ул. Ленина 999",,unknown_house,hybrid,msk_letter,False,0.676264396441984,no_match
+"г. Красноярск-46, ул. Ленина 25",,unknown_city_suffix,baseline,closed25,False,0.8040759716697476,threshold
+"г. Красноярск-46, ул. Ленина 25",,unknown_city_suffix,hybrid,closed25,False,0.9504402708631474,no_match
+"Томск, ул. Ленина 25",,unknown_city,baseline,msk_slash,False,0.5439343003117056,threshold
+"Томск, ул. Ленина 25",,unknown_city,hybrid,zhel_kr,False,0.7347063724322979,no_match
+"Курская область, г. Красноярск, ул. Ленина 25",,conflicting_region,baseline,zhel_kursk,False,0.7729043966107818,threshold
+"Курская область, г. Красноярск, ул. Ленина 25",,conflicting_region,hybrid,zhel_kursk,False,0.8301437882267296,no_match
+"г. Москва, ул. Ленина, д. 2, корп. 10",,invalid_permutation,baseline,msk_b2,True,0.9999999999999999,threshold
+"г. Москва, ул. Ленина, д. 2, корп. 10",,invalid_permutation,hybrid,msk_b1,False,0.7091868280127682,no_match
+,,empty,baseline,kr25,False,0.0,threshold
+,,empty,hybrid,closed25,False,0.0,no_match
