@@ -1,0 +1,8 @@
+{
+  "status": "selected_on_validation",
+  "threshold": 0.92,
+  "margin": 0.02,
+  "validation_n": 22,
+  "min_precision": 0.98,
+  "note": "Point estimate only; confirm on untouched, sufficiently large real test data."
+}
