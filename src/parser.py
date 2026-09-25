@@ -171,6 +171,23 @@ class AddressParser:
                 a.street = candidates[0]
             elif len(candidates)>1:
                 a.warnings.append('ambiguous_street_abbreviation')
+        # A house without a marker can follow a dictionary-known street:
+        # "москва туристская 25 корпус 1". Anchor on the WHOLE street name,
+        # so "1905 года" and "8 марта" cannot supply the house number.
+        if (not a.house and a.street and
+                not any(w.startswith('ambiguous_') for w in a.warnings)):
+            tail_pattern = (r'\s*,?\s*(?:(?:' + STREET_TYPES + r')\s*,?\s*)?'
+                            r'(?:дом\s+)?(?P<house>' + NUMBER + r')'
+                            r'(?:[\s,]+(?:корпус|строение|квартира)\s+' + NUMBER + r')*\s*')
+            numbers = set()
+            for match in _pattern(a.street).finditer(s):
+                tail = re.fullmatch(tail_pattern, s[match.end():])
+                if tail:
+                    numbers.add(tail.group('house'))
+            if len(numbers) == 1:
+                a.house = numbers.pop()
+            elif len(numbers) > 1:
+                a.warnings.append('ambiguous_house')
         # Unknown bare city before an explicit street must not silently disappear.
         if not a.city:
             prefix = re.split(r'\b('+STREET_TYPES+r')\b',s)[0].strip(' ,')

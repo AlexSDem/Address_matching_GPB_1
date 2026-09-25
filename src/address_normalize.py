@@ -19,6 +19,11 @@ def normalize_ru_address(text):
         s = re.sub(r'(?<![а-яa-z])' + re.escape(short) + r'\.', full + ' ', s)
         s = re.sub(r'(?<![а-яa-z])' + re.escape(short) + r'(?![а-яa-z])', full + ' ', s)
     s = re.sub(r'(?<=\d)(?=корпус|строение|квартира)', ' ', s)
+    # OSM also writes a separated short marker: '25 к1', '25 к. 1'.
+    # Bind it to a preceding numeric house token; do not expand arbitrary 'к'.
+    house_token = r'(?<![а-яa-z0-9])(\d+[а-яa-z]?(?:[/\-]\d+[а-яa-z]?)?)'
+    s = re.sub(house_token + r'\s+к\.?\s*(?=\d)', r'\1 корпус ', s)
+    s = re.sub(house_token + r'\s+с\.?\s*(?=\d)', r'\1 строение ', s)
     s = re.sub(r'(?<=\d)к(?=\d)', ' корпус ', s)
     s = re.sub(r'(?<=\d)с(?=\d)', ' строение ', s)
     s = re.sub(r'[.;:]', ' ', s)
