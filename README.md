@@ -3,7 +3,7 @@
 Развитие проекта **Address Matching**: сопоставление адресов с опечатками, сокращениями, пропущенными пробелами и изменённым порядком компонентов с эталонным справочником.
 
 **Репозиторий:** [AlexSDem/Address_matching_GPB_1](https://github.com/AlexSDem/Address_matching_GPB_1).  
-**Основа сравнения:** исходный архив `Address_matching_GPB_base-main.zip`.  
+**Первая версия:** [исходный репозиторий](https://github.com/AlexSDem/Address_matching_GPB_base).  
 
 Проект ИТМО AI Talent Hub. Участники исходного проекта: Дарья Вегера и Александр Демьянов. Руководитель: Кристина Желтова. [Первоначальный отчёт](docs/README.md) сохранён отдельно и относится к baseline.
 
